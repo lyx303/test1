@@ -25,4 +25,5 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Test
-      run: java test -v ./...
+      run:
+          npm test
