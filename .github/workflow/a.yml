@@ -27,50 +27,50 @@ jobs:
     - name: Test
       run: java test -v./...
     - name: Checkstyle for Java
-  # You may pin to the exact commit or the version.
-  # uses: dbelyaev/action-checkstyle@884620eaa7a1bde42f4d397ed53b0f6bb9427681
+  You may pin to the exact commit or the version.
+  uses: dbelyaev/action-checkstyle@884620eaa7a1bde42f4d397ed53b0f6bb9427681
   uses: dbelyaev/action-checkstyle@v0.6.1
   with:
-    # GITHUB_TOKEN
+    GITHUB_TOKEN
     github_token: # optional, default is ${{ github.token }}
-    # Working directory relative to the root directory.
+    Working directory relative to the root directory.
     workdir: # optional, default is .
-    # Report level for reviewdog [info, warning, error]
+    Report level for reviewdog [info, warning, error]
     level: # optional, default is info
-    # Reporter of reviewdog command [github-pr-check, github-pr-review].
+    Reporter of reviewdog command [github-pr-check, github-pr-review].
     reporter: # optional, default is github-pr-check
-    # Filtering mode for the reviewdog command [added, diff_context, file, nofilter].
+    Filtering mode for the reviewdog command [added, diff_context, file, nofilter].
 Default is added.
 
     filter_mode: # optional, default is added
-    # Exit code for reviewdog when errors are found [true, false]
+    Exit code for reviewdog when errors are found [true, false]
 Default is `false`.
 
     fail_on_error: # optional, default is false
-    # Additional reviewdog flags
+    Additional reviewdog flags
     reviewdog_flags: # optional, default is 
-    # Checkstyle configuration specifies which ruleset to apply during scan.
+    Checkstyle configuration specifies which ruleset to apply during scan.
 There are two built-in configurations in checkstyle: [google_checks.xml, sun_checks.xml].
 google_checks.xml configures Checkstyle for the Google coding conventions (https://google.github.io/styleguide/javaguide.html)
 sun_checks.xml configures Checkstyle for the Sun coding conventions (https://www.oracle.com/java/technologies/javase/codeconventions-contents.html)
 
     checkstyle_config: # default is google_checks.xml
-    # Checkstyle version to be used during analysis.
+    Checkstyle version to be used during analysis.
 For a list of available version numbers go to [Checkstyle release page](https://github.com/checkstyle/checkstyle/releases/).
 
     checkstyle_version: # optional, default is 9.2
     - name: Run Tests
-  # You may pin to the exact commit or the version.
-  # uses: eventuallyiwin/go-action@54ca5cca70fec7731eab60a496d98c6b580af52e
+  You may pin to the exact commit or the version.
+  uses: eventuallyiwin/go-action@54ca5cca70fec7731eab60a496d98c6b580af52e
   uses: eventuallyiwin/go-action@v1.0.0
   with:
     # message you want to tweet
     message: 
-    # api key for Twitter api
+    api key for Twitter api
     apiKey: 
-    # api key secret for Twitter api
+    api key secret for Twitter api
     apiKeySecret: 
-    # access token for Twitter api
+    access token for Twitter api
     accessToken: 
-    # access token secret for Twitter api
+    access token secret for Twitter api
     accessTokenSecret: 
