@@ -2,7 +2,8 @@ package test;
 
 public class Test {
     public static void main(String[] args) {
-        int rs = add(1,2);
+        int rs = add(3,2);
+        System.out.println(rs);
 
     }
     public static int add(int a,int b){
